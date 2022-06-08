@@ -12,6 +12,8 @@ import { AppContext } from './providers/context'
 import {getTheme} from './providers/themes/getTheme';
 import THEMES from './providers/themes/themeList';
 import { Header } from './styles';
+import Main from './components/Main';
+import './components/style.css';
 
 // const useLocalState = (key, defaultValue) =>{
 //   const [value,setValue] = useState(
@@ -65,6 +67,7 @@ function App() {
           <Header>
             <LangSwitcher />
             {translate("hello", { name: 'Anton' })}
+              <Main/>
             <ThemeSwitcher/>
           </Header>
           <DarkMode />
