@@ -48,6 +48,7 @@ const Main = () => {
         <>
             <div className="container">
                 <div className="left-content">
+                    <span>Выбери покемона покемона:</span>
                     <Card pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)} />
                     <div className="btn-group">
                        { prevUrl && <button onClick={() => {
