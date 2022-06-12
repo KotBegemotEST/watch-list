@@ -1,7 +1,7 @@
-import APPLE from './apple';
-import BASIC from './basic';
-import DARCULA from './darcula';
+import LIGHT from './light';
+import TOXIC from './toxic';
+import DARK from './dark';
 
 export {
-	APPLE, DARCULA, BASIC,
+	LIGHT, DARK, TOXIC,
 }

@@ -1,7 +1,7 @@
-import BASIC from "./basic";
+import TOXIC from "./toxic";
 
 export default {
-	...BASIC,
+	// ...TOXIC,
 	background: '#282c34',
 	color: '#fff',
 };

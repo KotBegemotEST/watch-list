@@ -1,7 +1,7 @@
 const THEMES = {
-	DARCULA: 'darcula',
-	APPLE: 'apple',
-	BASIC: 'basic',
+	DARK: 'dark',
+	LIGHT: 'light',
+	TOXIC: 'toxic',
 };
 
 export default THEMES;

@@ -1,10 +1,10 @@
-import { DARCULA, APPLE, BASIC } from './themes/';
+import { DARK, LIGHT, TOXIC } from './themes/';
 import THEMES  from "./themeList";
 
 export const getTheme = (themeName) => {
 	switch (themeName) {
-		case THEMES.DARCULA: return DARCULA;
-		case THEMES.APPLE: return APPLE;
-		default: return BASIC
+		case THEMES.DARK: return DARK;
+		case THEMES.LIGHT: return LIGHT;
+		default: return TOXIC
 	}
 };
