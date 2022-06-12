@@ -1,10 +1,11 @@
 import React from "react";
+import translate from '../providers/i18n/translate'
 
 const Card = ({ pokemon, loading, infoPokemon }) => {
     return (
         <>
             {
-                loading ? <h1>loading...</h1> : pokemon.map((item) => {
+                loading ? <h1> {translate("loading")}... </h1> : pokemon.map((item) => {
                     return (
                         <>
                             <div className="card" key={item.id} onClick={() => infoPokemon(item)}>

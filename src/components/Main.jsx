@@ -2,6 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import Card from './Card'
 import Pokeinfo from './Pokeinfo'
 import axios from 'axios';
+import translate from '../providers/i18n/translate'
 
 const Main = () => {
 
@@ -48,18 +49,18 @@ const Main = () => {
         <>
             <div className="container">
                 <div className="left-content">
-                    <span>Выбери покемона покемона:</span>
+                    <span>{translate("choice")}:</span>
                     <Card pokemon={pokeData} loading={loading} infoPokemon={poke => setPokeDex(poke)} />
                     <div className="btn-group">
                        { prevUrl && <button onClick={() => {
                             setPokeData([])
                             setUrl(prevUrl)
-                        }}>prev</button>}
+                        }}>{translate("prev")}</button>}
                         {nextUrl&&
                         <button onClick={() => {
                             setPokeData([])
                             setUrl(nextUrl)
-                        }}>next</button>}
+                        }}>{translate("next")}</button>}
                     </div>
                 </div>
                 <div className="right-content">

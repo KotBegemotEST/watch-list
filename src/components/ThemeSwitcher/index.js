@@ -12,7 +12,7 @@ export default ()=>{
 }
 
     return <div className="themes">
-        <span className="themes__block-header">{translate("themes")}</span>
+        <span className="themes__block-header">{translate("themes")}: </span>
          {Object.keys(THEMES).map(theme => {
         return <button key={theme}  onClick={()=>setTheme(THEMES[theme])}>{theme}</button>
     })}</div>

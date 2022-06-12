@@ -21,10 +21,14 @@ function App() {
       <I18nProvider locale={state.siteLang}>
         <div className="App">
           <Header>
-            <LangSwitcher />
-            {translate("hello", { name: 'Anton' })}
+            <div className='top'>
+              <LangSwitcher />
+              <ThemeSwitcher/>
+            </div>
+
+            {/* {translate("hello", { name: 'Anton' })} */}
               <Main/>
-            <ThemeSwitcher/>
+
           </Header>
         </div>
       </I18nProvider>

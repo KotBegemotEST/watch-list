@@ -5,5 +5,10 @@ export default {
 		'hello': 'Hello, {name}!',
 		'language': 'Language',
 		'themes': 'Themes',
+		'info': 'Info about pokemon',
+		'choice': 'Pokemon choice',
+		'next': 'next',
+		'prev': 'previous',
+		'loading': 'loading',
 	}
 }

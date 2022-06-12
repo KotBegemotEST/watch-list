@@ -28,7 +28,6 @@ body{
 .card{
     position: relative;
     cursor: pointer;
-    width: 45%;
     background-color: #9EDEF9;
     border-radius: 1rem;
     box-shadow: 0 5px 5px rgb(0 0 0 / 50%);
@@ -86,9 +85,11 @@ body{
 .right-content{
     position: relative;
     display: flex;
+    justify-content: center;
     width: 100%;
     max-width: 50%;
     justify-content: center;
+    align-items: flex-start;
     right: 0px;
 }
 .right-content img{
@@ -106,7 +107,6 @@ body{
 
 
 .pokeInfo{
-    position:fixed ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -151,6 +151,7 @@ body{
 }
 .btn-group{
     display: flex;
+    width: 100%;
 }
 .btn-group button{
     outline: none;
@@ -162,24 +163,24 @@ body{
     font-weight: bold;
     color: white;
     background-color: #b74555;
+    cursor: pointer;
 }
 
 
 .lang {
-    position: fixed;
+    z-index: 999;
     /* position: relative; */
     display: flex;
-    flex-direction: column;
     padding: 0px;
-    right: 0;
-    top: 30px;
+    left: 15px;
+    top: 15px;
 }
 
 
 .lang button {
     text-decoration: none;
     display: inline-block;
-    margin: 5px 15px;
+    margin: 5px 5px;
     padding: 5px 25px;
     position: relative;
     border: 2px solid #f1c40f;
@@ -211,6 +212,7 @@ body{
     text-align: center;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin-right: 10px;
   }
 
 
@@ -218,20 +220,19 @@ body{
 
 
   .themes {
-    position: fixed;
     /* position: relative; */
     display: flex;
-    flex-direction: column;
     padding: 0px;
-    right: 0;
-    bottom: 30px;
+    right: 15px;
+    top: 15px;
+    z-index: 999;
 }
 
 
 .themes button {
     text-decoration: none;
     display: inline-block;
-    margin: 5px 15px;
+    margin: 5px 5px;
     padding: 5px 25px;
     position: relative;
     border: 2px solid #f1c40f;
@@ -263,4 +264,69 @@ body{
     text-align: center;
     padding-bottom: 5px;
     padding-top: 5px;
+    margin-right: 10px;
   }
+
+  .top{
+    width: 100%;
+    background-color: #ffffff85;
+    padding: 5px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  @media (max-width: 900px) {
+    .lang button,.themes button {
+        padding: 2px 5px;
+        z-index: 999;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .top{
+        flex-direction: column;
+    }
+    .lang ,.themes  {
+        left: 0px;
+        right:0px;
+        justify-content: center;
+    }
+  }
+
+
+  @media (max-width: 500px) {
+    .left-content,.right-content{
+        width: 100%;
+        min-width: 100%;
+        justify-content: center;
+    }
+
+    .left-content{
+        order: 2;
+    }
+
+    .right-content{
+        order: 1;
+    }
+
+    .container{
+        flex-wrap: wrap;
+    }
+
+    .card{
+        margin: 5px;
+        flex-basis: 30%;
+        max-width: 30%;
+        padding: 0 0px 0px 15px;
+        min-width: 135px;
+    }
+    .card img{
+        width: 50px;
+    }
+
+    .card h2{
+        font-size: 16px;
+    }
+
+   }
