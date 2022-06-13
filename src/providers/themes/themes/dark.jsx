@@ -1,4 +1,4 @@
-import TOXIC from "./toxic";
+import TOXIC from "./toxic.jsx";
 
 export default {
 	// ...TOXIC,

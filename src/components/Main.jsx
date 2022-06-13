@@ -44,6 +44,7 @@ const Main = () => {
     useEffect(() => {
 
         pokeFun()
+
     }, [url])
     return (
         <>

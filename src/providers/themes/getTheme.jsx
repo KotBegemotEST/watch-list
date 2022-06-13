@@ -1,4 +1,4 @@
-import { DARK, LIGHT, TOXIC } from './themes/';
+import { DARK, LIGHT, TOXIC } from './themes';
 import THEMES  from "./themeList";
 
 export const getTheme = (themeName) => {

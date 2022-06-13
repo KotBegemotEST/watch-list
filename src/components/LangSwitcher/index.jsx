@@ -14,6 +14,7 @@ export default () => {
     return <div className="lang"> 
         <span className="lang__block-header"> {translate("language")}: </span>
         {Object.keys(LOCALES).map(locale => {
-        return <button key={locale} onClick={() => setLanguage(LOCALES[locale])}>{locale}</button>
+        return <button key={locale} onClick={() => setLanguage(LOCALES[locale])}> { translate(locale)}</button>
+        { console.log(translate(locale))}
     })}</div>
 }
